@@ -28,3 +28,11 @@ spoilerItems.forEach((item) => {
     item.classList.toggle("_active");
   });
 });
+
+// inputs
+let inputs = document.querySelectorAll("input");
+for (let input of inputs) {
+  input.addEventListener("focus", function (e) {
+    input.classList.add("_focused");
+  });
+}
